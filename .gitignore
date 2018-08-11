@@ -1,0 +1,62 @@
+# ignore all files starting with .
+.*
+
+# but track this file and .editorconfig
+!.gitignore
+!.editorconfig
+
+# ignore all files that start with ~
+~*
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore node/grunt dependency directories
+node_modules/
+
+# ignore admin andincludes directories
+wp-admin/
+wp-includes/
+
+# ignore compiled files
+*.map
+/*.css
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!CHANGELOG.md
+!composer.json
+
+# track favicon files, if they exist
+!android-chrome-*.png
+!apple-touch-icon*.png
+!browserconfig.xml
+!favicon*.png
+!favicon*.ico
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+!.stylelintrc
