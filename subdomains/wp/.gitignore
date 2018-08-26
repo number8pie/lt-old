@@ -1,6 +1,4 @@
-# ignore everything in the root except the "wp-content" directory.
-# /*
-# !wp-content/
+# donttrack config ()so the local version can use the db on the server
 wp-config.php
 
 # ignore all files starting with .
