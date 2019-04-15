@@ -1,0 +1,26 @@
+@import './scss/utilities/variables';
+
+@import './scss/base/typography';
+
+.header {
+  display: grid;
+  grid-template-columns: $gutter_regular auto $gutter_regular;
+  grid-template-rows: $gutter_regular  calc(100vh - 80px) $gutter_regular;
+  &__content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+
+    }
+    &__tagline {
+
+    }
+  }
+}
