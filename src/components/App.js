@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import './App.scss';
-import Nav from './components/Nav';
+import Header from './Header';
+import '../App.scss';
+import Nav from './Nav';
 
 let socialAccounts = {
   'facebook': {
@@ -23,8 +23,8 @@ const apiUrlPages = 'http://wp.leethomas.localhost/index.php/wp-json/wp/v2/pages
 
 class App extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       pages: []
     }
@@ -44,7 +44,7 @@ class App extends React.Component {
     return(
       <>
         <Nav social={socialAccounts} pages={this.state.pages}></Nav>
-        <Header title="Title" tagline="Header"></Header>
+        <Header slug={this.props.match.params.slug} pages={this.state.pages} ></Header>
       </>
     )
   }

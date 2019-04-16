@@ -1,10 +1,15 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
-import App from './App';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import App from './App.js';
 
 const Router = () => (
     <BrowserRouter>
-        <Route path="/:slug" component={App} />
+
+        <Switch>
+            <Route exact path="/" component={App} />
+            <Route path="/:slug" component={App} />
+        </Switch>
+
     </BrowserRouter>
 )
 
